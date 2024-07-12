@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h2>VK's project</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Analytics</a></li>
+                    <li><a href="#">My Wallet</a></li>
+                    <li><a href="#">Accounts</a></li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Security</a></li>
+                    <li><a href="#">Help Centre</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="dark-mode-toggle">
+                    <label for="dark-mode">Dark Mode</label>
+                    <input type="checkbox" id="dark-mode">
+                </div>
+                <div class="user-info">
+                    <img src="profile-picture.jpg" alt="User">
+                    <p>Vishard<br><span>Web Developer</span></p>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <header class="main-header">
+                <input type="text" placeholder="Search for anything...">
+            </header>
+            <section class="dashboard">
+                <div class="cards">
+                    <div class="card">
+                        <p>Total Balance</p>
+                        <h3>$632,000</h3>
+                    </div>
+                    <div class="card">
+                        <p>Total Income</p>
+                        <h3>$632,000</h3>
+                    </div>
+                    <div class="card">
+                        <p>Total Saving</p>
+                        <h3>$632,000</h3>
+                    </div>
+                    <div class="card">
+                        <p>Total Outcome</p>
+                        <h3>$632,000</h3>
+                    </div>
+                </div>
+                <div class="analytics">
+                    <h2>Analytics</h2>
+                    <canvas id="analytics-chart"></canvas>
+                </div>
+                <div class="transactions">
+                    <h2>Transaction</h2>
+                    <input type="text" placeholder="Search for anything...">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Date</th>
+                                <th>Price</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Adobe After Effect</td>
+                                <td>Sat, 20 Apr 2020</td>
+                                <td>$80.09</td>
+                                <td>Completed</td>
+                            </tr>
+                            <tr>
+                                <td>Mcdonald's</td>
+                                <td>Fri, 19 Apr 2020</td>
+                                <td>$7.03</td>
+                                <td>Completed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
